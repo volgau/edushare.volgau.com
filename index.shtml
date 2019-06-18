@@ -18,7 +18,7 @@
                         </p>
                         <hr />
                         <p>
-                            <a class="btn btn-warning btn-lg" href="http://edushare.volgau.com/files">Просмотр каталога</a>
+                            <a class="btn btn-warning btn-lg" href="directory.shtml">Просмотр каталога</a>
                         </p>
                         <p class="text-muted small">
                             Для доступа к материалам Вам потребуется учетная запись в домене CAMPUS.
