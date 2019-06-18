@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="utf-8"/>
+    <!-- #include file="_includes.html" -->
+</head>
+<body>
+    <!-- #include file="_header.html" -->
+    <main style="padding-top:2rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h1 style="margin-bottom:1.5rem">О ресурсе edushare.volgau.com</h1>
+                        <p>Ресурс <a href="http://edushare.volgau.com">edushare.volgau.com</a> предназначен для сбора и публикации материалов по реализуемым образовательным программам
+                            <strong>ФГБОУ ВО "Волгоградский государственный аграрный университет"</strong> для участников образовательного процесса - в дополнение к материалам, 
+                            публикуемым в открытом доступе в разделе <a href="http://www.volgau.com/sveden" target="_blank">"Сведения об образовательной организации"</a>.
+                        </p>
+                        <hr />
+                        <p>
+                            <a class="btn btn-warning btn-lg" href="http://edushare.volgau.com/files">Просмотр каталога</a>
+                        </p>
+                        <p class="text-muted small">
+                            Для доступа к материалам Вам потребуется учетная запись в домене CAMPUS.
+                        </p>
+                        <hr />
+                        <p>По вопросам работы с ресурсом обращайтесь к <a href="http://www.volgau.com/%D1%83%D0%B8%D0%BA%D1%82/ctl/employeedetails/mid/7262/employee_id/2" target="_blank">администратору ресурса</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <main>
+</body>

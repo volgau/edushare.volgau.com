@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="utf-8"/>
+    <!-- #include file="_includes.html" -->
+</head>
+<body>
+    <!-- #include file="_header.html" -->
+    <main style="padding-top:2rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Редактору</h1>
+                    <hr />
+                    <h2>Доступ в режиме редактирования через общую папку Windows</h2>
+                        <p>Доступ к ресурсу в режиме редактирования имеют зам. деканов факультетов (директоров институтов) по информатизации.
+                            Доступ осуществляется по технологии SMB и возможен только из локальной сети университета.</p>
+                        <ol>
+                            <li>Для доступа в адресной строке проводника Windows наберите адрес <code>\\web.campus.volgau.com\edushare</code></li>
+                            <li>Введите свои имя пользователя и пароль в домене <code>CAMPUS</code>. Например <code>pivanov</code>, <code>CAMPUS\pivanov</code>, <code>pivanov@campus.volgau.com</code></li>
+                        </ol>
+                    <h2>Доступ в режиме редактирования по технологии WebDAV (времено недоступен)</h2>
+                    <p>Доступ к ресурсу в режиме редактирования имеют зам. деканов факультетов (директоров институтов) по информатизации.
+                        Доступ осуществляется по технологии WebDAV и возможен как из локальной сети университета, так и из глобальной сети.</p>
+                    <ol>
+                        <li><strong>Windows</strong>: В адресной строке проводника Windows наберите адрес <code>\\edushare.volgau.com\DavWWWRoot</code></li>
+                        <li><strong>Linux/Unix</strong>: В адресной строке файлового менеджера наберите адрес <code>dav://edushare.volgau.com</code></li>
+                        <li>Введите свои имя пользователя и пароль в домене <code>CAMPUS</code></li>
+                    </ol>
+                    <hr />
+                    <h2>Проблемы и решения</h2>
+                    <h3>1. Невозможно подключиться в общей папке Windows</h3>
+                    <ol>
+                        <li>Убедитель, что компьютер включен в домен CAMPUS.</li>
+                        <li>Попробуйте использовать другие варианты написания имени пользователя - <code>CAMPUS\pivanov</code> или <code>pivanov@campus.volgau.com</code>.</li>
+                        <li>Если это не помогло, то попробуйте <a href="https://blog.volobuev.su/ms-windows-10-ne-podklyuchaetsya-k-setevojj-papke-na-servere-samba/" target="_blank">вариант решения для Windows 10</a>.
+                            Для компьютера, включенного в домен, вам понадобится помощь системного администратора.
+                        </li>    
+                    </ol>
+                    <h3>2. При редактировании через WebDAV возникают проблемы при работе с файлами размером более 50 Мб (Windows версии &lt; 10)</h3>
+                    <p>К сожалению, решить вопрос можно только исправив настройки на клиенте -
+                        см. <a href="http://support.microsoft.com/kb/900900" target="_blank">http://support.microsoft.com/kb/900900</a>.
+                        Для компьютера, включенного в домен, вам понадобится помощь системного администратора.</p>
+                    <ol>
+                        <li>Запустите редактор реестра <code>regedit</code></li>
+                        <li>Откройте раздел <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters</code></li>
+                        <li>Отредактируйте значение параметра <code>FileSizeLimitInBytes</code> в десятичном режиме, установив его в <code>100000000</code> (примерно 100 Мб, можно и больше).</li>
+                        <li>Закройте редактор реестра и перезагрузите компьютер.</li>
+                    </ol>
+                    <p>Другой вариант решения самых различных проблем с WebDAV - использовать сторонний клиент, например <a href="https://cyberduck.io/" target="_blank">CyberDuck</a>.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
