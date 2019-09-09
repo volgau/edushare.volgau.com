@@ -20,6 +20,8 @@
                     <p>Чтобы получить более короткую ссылку, из адресной строки браузера следует копировать только относительный адрес ресурса, 
                         т.е. вместо <code>http://edushare.volgau.com/files/АТФ/Аспирантура/06.01.04 Агрохимия/</code> нужно скопировать только
                         <code>/files/АТФ/Аспирантура/06.01.04 Агрохимия/</code> и добавить <code>http://edushare.volgau.com</code> уже в текстовом редакторе.</p>
+                    <p>В браузере Firefox имеется настройка, которая позволяет копировать ссылки из адресной строки без перекодировки.
+                        Для её включения, перейдите по адресу <code>about:config</code> и в появившемся окне задайте значение параметра <code>browser.urlbar.decodeURLsOnCopy</code> равным <code>true</code>.</p>
                     <p>Другой вариант - воспользоваться сервисом <a href="https://meyerweb.com/eric/tools/dencoder/" target="_blank">раскодирования ссылок</a> или сервисами укорачивания ссылок:
                         <a href="https://bitly.com/" target="_blank">bit.ly</a>, <a href="https://clck.ru/" target="_blank">clck.ru</a>.</p>
                     <div class="alert alert-warning">
